@@ -1,11 +1,8 @@
+package IoTDevices;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
-
-import lecture1.AbstractIoTDeviceTest;
-import lecture1.IoTDevice;
-import lecture1.Thermostat;
 
 public class ThermostatTest extends AbstractIoTDeviceTest {
 

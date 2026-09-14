@@ -1,4 +1,4 @@
-package lecture1;
+package IoTDevices;
 
 public class Thermostat extends AbstractIoTDevice {
     private double temperature;

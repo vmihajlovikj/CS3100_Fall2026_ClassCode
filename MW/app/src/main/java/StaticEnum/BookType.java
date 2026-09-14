@@ -1,4 +1,4 @@
-package lecture2;
+package StaticEnum;
 
 public enum BookType {
     EBOOK, AUDIO, PAPER

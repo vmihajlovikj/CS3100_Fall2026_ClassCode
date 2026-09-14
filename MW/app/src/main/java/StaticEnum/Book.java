@@ -1,4 +1,4 @@
-package lecture2;
+package StaticEnum;
 
 import java.util.Objects;
 

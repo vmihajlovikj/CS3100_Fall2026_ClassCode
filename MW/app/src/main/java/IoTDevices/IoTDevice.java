@@ -1,4 +1,4 @@
-package lecture1;
+package IoTDevices;
 
 public interface IoTDevice {
     void turnOn();

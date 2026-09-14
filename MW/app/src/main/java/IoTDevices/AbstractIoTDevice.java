@@ -1,4 +1,4 @@
-package lecture1;
+package IoTDevices;
 
 public abstract class AbstractIoTDevice implements IoTDevice {
     protected final String name;

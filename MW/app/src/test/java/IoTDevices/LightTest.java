@@ -1,30 +1,29 @@
-package lecture1;
+package IoTDevices;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
-
-import java.nio.charset.IllegalCharsetNameException;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class FanTest extends AbstractIoTDeviceTest {
+public class LightTest extends AbstractIoTDeviceTest {
     private IoTDevice device;
+    //So device1 will be used for all
+    //non abstract test.
 
     @BeforeEach 
-    void setup(){
-        this.device = new Fan("KitchenFan", 80);
+    protected void setup(){
+        this.device = new Light("Kitchen", 80);    
     }
+
+
     @Test
-    void testNegativeSpeed(){
+    void testNegativePower(){
         try{
-            IoTDevice device1 = new Fan("Kitchen", -10);
+            new Light("Kitchen", -10);
             fail();
         }catch (IllegalArgumentException e){
-            assertEquals("Speed cannot be negative.", e.getMessage());
+            assertEquals("Power cannot be under 0", e.getMessage());
         }
     }
 
@@ -32,13 +31,13 @@ public class FanTest extends AbstractIoTDeviceTest {
     //Make sure to test toString.
     @Test
     void testIdentify() {
-        assertEquals("Fan's speed is at 80% speed.", this.device.identify());
+        assertEquals("Light is at 80% power.", this.device.identify());
     }
 
 
     @Override
     protected IoTDevice makeCorrectDevice(String name) {
-        return new Fan(name, 10);
+        return new Light(name, 10);
     }
 }
     // @Test
