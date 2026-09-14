@@ -1,0 +1,6 @@
+Plan for today:
+1. Abstract Testing
+2. Extending a non abstract class (DimmableLigt and TunableLight)
+3. Introduction to composition
+4. Introduction to ENUM
+5. Introduction to static
