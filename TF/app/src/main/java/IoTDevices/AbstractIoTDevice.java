@@ -1,4 +1,4 @@
-package friday325sept11;
+package IoTDevices;
 
 public abstract class AbstractIoTDevice implements IoTDevice{
     protected final String name;

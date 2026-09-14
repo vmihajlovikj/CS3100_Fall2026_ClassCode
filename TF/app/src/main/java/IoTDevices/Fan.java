@@ -1,4 +1,4 @@
-package friday325sept11;
+package IoTDevices;
 
 public class Fan extends AbstractIoTDevice {
     private final int speed;

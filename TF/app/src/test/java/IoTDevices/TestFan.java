@@ -1,4 +1,4 @@
-package friday325sept11;
+package IoTDevices;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -6,12 +6,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TestLight {
+import IoTDevices.Fan;
+import IoTDevices.IoTDevice;
+
+public class TestFan {
     private IoTDevice device;
 
     @BeforeEach 
     void init(){
-        this.device = new Light("Kitchen", 50);
+        this.device = new Fan("Bathroom", 80);
     }
 
     @Test 

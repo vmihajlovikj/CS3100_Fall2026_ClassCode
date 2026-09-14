@@ -1,4 +1,4 @@
-package friday325sept11;
+package IoTDevices;
 
 public class Thermostat extends AbstractIoTDevice {
     private final double temperature;

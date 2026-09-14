@@ -1,4 +1,4 @@
-package friday325sept11;
+package IoTDevices;
 
 //An interface only has method signatures.
 //What functinallity do all IoTDevices need to provide?

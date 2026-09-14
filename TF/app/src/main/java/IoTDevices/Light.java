@@ -1,4 +1,4 @@
-package friday325sept11;
+package IoTDevices;
 
 public class Light extends AbstractIoTDevice {
     private final int power;
