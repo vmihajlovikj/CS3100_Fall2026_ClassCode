@@ -1,0 +1,4 @@
+1. Review.
+2. Abstract testing with abstract ? method. 
+3. Introduction to ENUM and static
+4. Templated arguments.
